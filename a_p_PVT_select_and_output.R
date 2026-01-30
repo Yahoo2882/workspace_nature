@@ -43,7 +43,7 @@ table(sub_all$a_pvt_label)
 # 分期
 table(sub_all$age, sub_all$a_pvt_label)
 
-# 5) 删除anbiguous细胞
+# 5) 删除anbiguous的细胞
 sub_ap <- subset(sub_all, subset = a_pvt_label %in% c("aPVT", "pPVT"))
 table(sub_ap$a_pvt_label)
 table(sub_ap$age, sub_ap$a_pvt_label)
